@@ -1,0 +1,180 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: linear-gradient(to top left, blue, pink);
+    min-height: 100vh;
+}
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 650px;
+}
+.container
+{
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(250, 235, 215, 0.205);
+    backdrop-filter: blur(3px);
+    box-shadow: 4px 3px 6px #333;
+    padding: 20px;
+    border-radius: 20px;
+
+    z-index: 10;
+}
+input
+{
+    width: 100%;
+    font-size: 20px;
+    padding: 4px 7px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.664);
+}
+.btn
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+button:disabled
+{
+    color: #33333360;
+    background: rgba(255, 255, 255, 0.562);
+}
+button
+{
+    width: 40%;
+    color: white;
+    font-size: 16px;
+    padding: 4px 7px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(21, 37, 255, 0.664);
+}
+.c1,.c2,.c3,.c4,.c5,.c6,.c7
+{
+    background: linear-gradient(to top left, rgba(255,255,255, 0.7),  rgba(255,255,255, 0.2));
+    width: 80px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 20px 0 20px 0;
+
+    z-index: 5;
+}
+.c1{
+    left: 30%;
+    bottom: 20%;
+}
+.c2{
+    right: 31%;
+    top: 35%;
+}
+.c3
+{
+    left: 30%;
+    bottom: 60%;
+}
+.c4{
+    right: 21%;
+    top: 15%;
+}
+.c5
+{
+    left: 10%;
+    bottom: 40%;
+}
+.c4{
+    right: 16%;
+    top: 75%;
+}
+.c5
+{
+    left: 5%;
+    bottom: 30%;
+}
+.c6{
+    right: 10%;
+    top: 65%;
+}
+.c7
+{
+    left: 25%;
+    top: 30%;
+}
+ol
+{
+    width: auto;
+    height: 150px;
+    margin: 15px 0;
+
+    overflow-y: auto;
+}
+li
+{
+    color: #333333ce;
+    list-style-type: square;
+    margin-left: -15px;
+    word-wrap: break-word;
+    font-size: 22px;
+    font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+::-webkit-scrollbar
+{
+    background: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #3333;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-corner
+{
+    background: none;
+}
+@media only screen and (max-width: 600px){
+
+    .container
+    {
+        width: 340px;
+    }
+    .c1{
+        left: 60%;
+        bottom: 50%;
+    }
+    .c2{
+        right: 11%;
+        top: 15%;
+    }
+    .c3
+    {
+        left: 30%;
+        bottom: 10%;
+    }
+    .c4{
+        right: 51%;
+        top: 10%;
+    }
+    .c5
+    {
+        left: 5%;
+        bottom: 30%;
+    }
+    .c6{
+        right: 10%;
+        top: 65%;
+    }
+    .c7
+    {
+        left: 25%;
+        top: 30%;
+    }
+
+}
